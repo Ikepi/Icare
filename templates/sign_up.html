@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template-->
+    {% load static %}
+    <link href="{% static "/cover.css" %}" rel="stylesheet">
+
+    <title>iCare</title>
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">iCare</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li><a href="/home">Home</a></li>
+                  <li><a href="/sign_in">Sign in</a></li>
+                  <li class="active"><a href="/sign_up">Sign up</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+              <form class="form-signin" action="/register/" method="post">
+                  {% csrf_token %}
+                  <div class="form-group">
+                    <label for="InputUserName" class="pull-left">User Name</label>
+                    <input type="text" class="form-control" maxlength="10" id="InputUserName" name="InputUserName" placeholder="User Name" required autofocus>
+                  </div>
+                  <div class="form-group">
+                    <label for="InputPassword" class="pull-left">Password</label>
+                    <input type="password" class="form-control" minlength="8" maxlength="20" id="InputPassword" name="InputPassword" placeholder="At least 8 characters" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="InputConfirmPassword" class="pull-left">Confirm Password</label>
+                    <input type="password" class="form-control" minlength="8" maxlength="20" id="InputConfirmPassword" name="InputConfirmPassword" placeholder="Confirm Password" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="InputEmail" class="pull-left">Email</label>
+                    <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Email" required>
+                  </div>
+                  <hr>
+                  <button type="submit" class="btn btn-default btn-block">Register</button>
+              </form>
+              <p>{{ error }}</p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://github.com/Ikepi">ljy</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
