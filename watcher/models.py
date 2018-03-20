@@ -32,7 +32,7 @@ class Map(models.Model):
 
 
 # 体温
-class Tem(models.Model):
+class Temp(models.Model):
     ta = models.DecimalField(max_digits=4, decimal_places=2)  # 环境温度
     to = models.DecimalField(max_digits=4, decimal_places=2)  # 目标温度
     time = models.DateTimeField(auto_now=True)

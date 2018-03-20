@@ -22,7 +22,7 @@ admin.autodiscover()
 router = routers.DefaultRouter()
 router.register('user', views.UserViewSet)
 router.register("gyr", views.GyrViewSet)
-router.register("temp", views.TemViewSet)
+router.register("temp", views.TempViewSet)
 router.register("map", views.MapViewSet)
 router.register("devicelist", views.DeviceViewSet)
 

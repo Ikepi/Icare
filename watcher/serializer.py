@@ -26,7 +26,7 @@ class MapSerializer(serializers.HyperlinkedModelSerializer):
 
 class TemperatureSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Tem
+        model = Temp
         fields = ("url", "ta", "to", "time", "device")
 
 

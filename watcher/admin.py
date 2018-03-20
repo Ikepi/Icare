@@ -11,11 +11,11 @@ class MapAdmin(admin.ModelAdmin):
     list_display = ()
 
 
-class TemAdmin(admin.ModelAdmin):
+class TempAdmin(admin.ModelAdmin):
     list_display = ()
 
 
 admin.site.register(DeviceList, admin_class=DeviceListAdmin)
 admin.site.register(Map)
-admin.site.register(Tem)
+admin.site.register(Temp)
 admin.site.register(Gyr)

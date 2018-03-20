@@ -103,8 +103,8 @@ class GyrViewSet(viewsets.ModelViewSet):
     serializer_class = GyrSerializer
 
 
-class TemViewSet(viewsets.ModelViewSet):
-    queryset = Tem.objects.all()
+class TempViewSet(viewsets.ModelViewSet):
+    queryset = Temp.objects.all()
     serializer_class = TemperatureSerializer
 
 
