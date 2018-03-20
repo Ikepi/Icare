@@ -33,8 +33,8 @@ class Map(models.Model):
 
 # 体温
 class Temp(models.Model):
-    ta = models.DecimalField(max_digits=4, decimal_places=2)  # 环境温度
-    to = models.DecimalField(max_digits=4, decimal_places=2)  # 目标温度
+    ta = models.CharField(max_length=10)  # 环境温度
+    to = models.CharField(max_length=10)  # 目标温度
     time = models.DateTimeField(auto_now=True)
     device = models.ForeignKey(DeviceList, on_delete=models.CASCADE, related_name='temper')
 
@@ -43,15 +43,15 @@ class Temp(models.Model):
 
 
 class Gyr(models.Model):  # 陀螺仪数据
-    accx = models.DecimalField(max_digits=6, decimal_places=3)
-    accy = models.DecimalField(max_digits=6, decimal_places=3)
-    accz = models.DecimalField(max_digits=6, decimal_places=3)
-    omegax = models.DecimalField(max_digits=6, decimal_places=3)
-    omegay = models.DecimalField(max_digits=6, decimal_places=3)
-    omegaz = models.DecimalField(max_digits=6, decimal_places=3)
-    anglex = models.DecimalField(max_digits=6, decimal_places=3)
-    angley = models.DecimalField(max_digits=6, decimal_places=3)
-    anglez = models.DecimalField(max_digits=6, decimal_places=3)
+    accx = models.CharField(max_length=25)
+    accy = models.CharField(max_length=25)
+    accz = models.CharField(max_length=25)
+    omegax = models.CharField(max_length=25)
+    omegay = models.CharField(max_length=25)
+    omegaz = models.CharField(max_length=25)
+    anglex = models.CharField(max_length=25)
+    angley = models.CharField(max_length=25)
+    anglez = models.CharField(max_length=25)
     fall = models.BooleanField()
     device = models.OneToOneField(DeviceList, on_delete=models.CASCADE)
 

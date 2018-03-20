@@ -7,7 +7,7 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = User
-        fields = ("url", "username", "email", "devicelist")
+        fields = ("url", "username", "email", "password", "devicelist")
 
 
 class DeviceListSerializer(serializers.HyperlinkedModelSerializer):
