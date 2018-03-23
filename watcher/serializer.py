@@ -3,11 +3,12 @@ from watcher.models import *
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
-    devicelist = serializers.HyperlinkedRelatedField(many=True, queryset=DeviceList.objects.all(), view_name="devicelist-detail")
+    devicelist = serializers.HyperlinkedRelatedField(many=True, queryset=DeviceList.objects.all(),
+                                                     view_name="devicelist-detail")
 
     class Meta:
         model = User
-        fields = ("url", "username", "email", "password", "devicelist")
+        fields = ("url", "username", "email", "devicelist")
 
 
 class DeviceListSerializer(serializers.HyperlinkedModelSerializer):
@@ -19,19 +20,25 @@ class DeviceListSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class MapSerializer(serializers.HyperlinkedModelSerializer):
+    # device = serializers.ReadOnlyField(source="device.number")
+
     class Meta:
         model = Map
         fields = ("url", "n_s", "w_e", "time", "device")
 
 
-class TemperatureSerializer(serializers.HyperlinkedModelSerializer):
+class TempSerializer(serializers.HyperlinkedModelSerializer):
+    # device = serializers.ReadOnlyField(source="device.number")
+
     class Meta:
         model = Temp
         fields = ("url", "ta", "to", "time", "device")
 
 
 class GyrSerializer(serializers.HyperlinkedModelSerializer):
+    # device = serializers.ReadOnlyField(source="device.number")
+
     class Meta:
         model = Gyr
-        fields = ("url", "accx", "accy", "accz", "omegax",
+        fields = ("url", "id", "accx", "accy", "accz", "omegax",
                   "omegay", "omegaz", "anglex", "angley", "anglez", "fall", "device")

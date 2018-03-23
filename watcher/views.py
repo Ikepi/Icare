@@ -1,9 +1,8 @@
-from django.shortcuts import render
-#from watcher.models import *
-#from django.contrib.auth import authenticate, login, logout
-from django.views.decorators.csrf import csrf_exempt
 from rest_framework import viewsets
-from rest_framework.utils import json
+# from rest_framework.decorators import api_view
+from rest_framework.response import Response
+from rest_framework.views import APIView
+from rest_framework import status
 
 from watcher.serializer import *
 
@@ -82,7 +81,7 @@ def temperature(request):
 """
 
 
-#  类视图
+#  类视图 使用viewset，
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
@@ -105,16 +104,77 @@ class GyrViewSet(viewsets.ModelViewSet):
 
 class TempViewSet(viewsets.ModelViewSet):
     queryset = Temp.objects.all()
-    serializer_class = TemperatureSerializer
+    serializer_class = TempSerializer
 
 
-"""
-@csrf_exempt  # 允许跨域访问
-def test(request):
-    if request.method == 'POST':
-        value = request.body
-        print(value)
-        data = json.loads(value)
-        print(data)
+# 函数视图
+# @api_view(['GET'])
+# def get_id(request):
+#     pass
 
-"""
+
+# app获取数据使用“http://172.26.19.220:8000/xxx/?device=设备号”的形式
+
+# 获取设备号device
+def get_device(request):
+    device = request.GET.get('device')
+    return device
+
+
+# 使用类视图
+class TempDetailView(APIView):
+    # permission_classes = () # 为判断是否有权限访问这个设备的数据
+    # permission_classes = AllowAny
+
+    @staticmethod
+    def get(request):
+        device = get_device(request)
+        if device is None:
+            queryset = Temp.objects.all()
+            temp_serializer = TempSerializer(queryset, many=True, context={'request': request})
+        else:
+            try:
+                queryset = Temp.objects.all().filter(device=device)[0]
+            except IndexError:
+                return Response(status=status.HTTP_404_NOT_FOUND)
+            temp_serializer = TempSerializer(queryset, context={'request': request})
+        return Response(temp_serializer.data)
+
+
+# 使用类视图
+class GyrDetailView(APIView):
+    # permission_classes = () # 为判断是否有权限访问这个设备的数据
+    # permission_classes = AllowAny
+
+    @staticmethod
+    def get(request):
+        device = get_device(request)
+        if device is None:
+            queryset = Gyr.objects.all()
+            gyr_serializer = GyrSerializer(queryset, many=True, context={'request': request})
+        else:
+            try:
+                queryset = Gyr.objects.all().filter(device=device)[0]
+            except IndexError:
+                return Response(status=status.HTTP_404_NOT_FOUND)
+            gyr_serializer = GyrSerializer(queryset, context={'request': request})
+        return Response(gyr_serializer.data)
+
+
+class MapDetailView(APIView):
+    # permission_classes = () # 为判断是否有权限访问这个设备的数据
+    # permission_classes = AllowAny
+
+    @staticmethod
+    def get(request):
+        device = get_device(request)
+        if device is None:
+            queryset = Map.objects.all()
+            map_serializer = MapSerializer(queryset, many=True, context={'request': request})
+        else:
+            try:
+                queryset = Map.objects.all().filter(device=device)[0]
+            except IndexError:
+                return Response(status=status.HTTP_404_NOT_FOUND)
+            map_serializer = MapSerializer(queryset, context={'request': request})
+        return Response(map_serializer.data)

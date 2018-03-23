@@ -24,8 +24,8 @@ SECRET_KEY = ')kj8lo)*1x2ba35kr@ynh7f%be9)x#s=_8aocvbvtyp+q6_(3@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['172.26.19.220']
-# ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['172.26.19.220']
+ALLOWED_HOSTS = ["172.28.165.8"]  # 实验室IP
 
 # Application definition
 
@@ -105,9 +105,15 @@ AUTH_PASSWORD_VALIDATORS = [
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ),
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-    ]
+        'rest_framework.permissions.IsAuthenticatedOrReadOnly',
+    ],
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10
 }
 
 # Internationalization

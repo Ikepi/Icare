@@ -22,13 +22,16 @@ class DeviceList(models.Model):
 
 # 定位信息模型
 class Map(models.Model):
-    n_s = models.IntegerField()
-    w_e = models.IntegerField()
+    n_s = models.CharField(max_length=8)
+    w_e = models.CharField(max_length=8)
     time = models.DateTimeField(auto_now=True)
-    device = models.OneToOneField(DeviceList, on_delete=models.CASCADE)
+    device = models.ForeignKey(DeviceList, on_delete=models.CASCADE, related_name='map')
 
     def __str__(self):
         return str(self.time)
+
+    class Meta:
+        ordering = ['-id']
 
 
 # 体温
@@ -40,6 +43,9 @@ class Temp(models.Model):
 
     def __str__(self):
         return str(self.time)
+
+    class Meta:
+        ordering = ['-id']
 
 
 class Gyr(models.Model):  # 陀螺仪数据
@@ -53,8 +59,11 @@ class Gyr(models.Model):  # 陀螺仪数据
     angley = models.CharField(max_length=25)
     anglez = models.CharField(max_length=25)
     fall = models.BooleanField()
-    device = models.OneToOneField(DeviceList, on_delete=models.CASCADE)
+    device = models.ForeignKey(DeviceList, on_delete=models.CASCADE, related_name='gyr')
 
     def __str__(self):
         return self.device
+
+    class Meta:
+        ordering = ['-id']
 # 心电图

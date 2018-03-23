@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from watcher import views
 from rest_framework import routers
+
+from watcher import views
+
 admin.autodiscover()
 
 router = routers.DefaultRouter()
@@ -28,9 +30,14 @@ router.register("devicelist", views.DeviceViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(router.urls)),
+    path('api/', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path('temp-detail/', views.TempDetailView.as_view()),
+    path('map-detail/', views.MapDetailView.as_view()),
+    path('gyr-detail/', views.GyrDetailView.as_view()),
 ]
+
+# urlpatterns = format_suffix_patterns(urlpatterns)
 """
     path('home/', views.home_page),
     path('', views.home_page),
