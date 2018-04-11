@@ -16,25 +16,28 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
+from rest_framework_jwt.views import obtain_jwt_token
 
-from watcher import views
+from watcher.views import *
 
 admin.autodiscover()
 
 router = routers.DefaultRouter()
-router.register('user', views.UserViewSet)
-router.register("gyr", views.GyrViewSet)
-router.register("temp", views.TempViewSet)
-router.register("map", views.MapViewSet)
-router.register("devicelist", views.DeviceViewSet)
+router.register('user', UserViewSet)
+router.register("devicelist", DeviceViewSet)
+router.register("gyr", GyrViewSet)
+router.register("temp", TempViewSet)
+router.register("map", MapViewSet)
+router.register("temp-detail", TempDetailViewSet)
+router.register("gyr-detail", GyrDetailViewSet)
+router.register("map-detail", MapDetailViewSet)
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include(router.urls)),
+    path('', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    path('temp-detail/', views.TempDetailView.as_view()),
-    path('map-detail/', views.MapDetailView.as_view()),
-    path('gyr-detail/', views.GyrDetailView.as_view()),
+    path('api-token-auth/', obtain_jwt_token),  # 为客户端提供一个获取给定用户名和密码的令牌的机制,用于登录
 ]
 
 # urlpatterns = format_suffix_patterns(urlpatterns)
