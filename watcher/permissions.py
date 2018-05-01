@@ -5,17 +5,11 @@ class IsOwnerOrRefuse(permissions.BasePermission):
     """
     "自定义权限，只有设备的绑定者才能编辑设备信息"
     """
-
     def has_object_permission(self, request, view, obj):  # 访问对象时才会进行权限检测
-        # Read permissions are allowed to any request,
-        # so we'll always allow GET, HEAD or OPTIONS requests.
-        # if request.method in permissions.SAFE_METHODS:
-        #     return True
-        # Write permissions are only allowed to the owner of the snippet.
-        return obj.device.user.include(request.user)
+        return obj.device_user.contains(request.user) or request.user.is_superuser
 
     def has_permission(self, request, view):  # 访问这个接口时，会进行权限检测
-        if request.method in permissions.SAFE_METHODS:
+        if request.method in permissions.SAFE_METHODS or request.user.is_superuser:
             return True
 
 

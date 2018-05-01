@@ -1,15 +1,15 @@
-# from django.utils.datetime_safe import datetime
-from rest_framework import viewsets, authentication, permissions, filters
-# from rest_framework.generics import get_object_or_404
-from rest_framework.permissions import IsAuthenticated
+from django.core.cache import cache
+from django.db.models.signals import pre_save
+from django.dispatch import receiver
+from rest_framework import status, generics
+from rest_framework import viewsets, authentication, filters
 from rest_framework.response import Response
-# from rest_framework.views import APIView
-from rest_framework import status
+from rest_framework.utils import json
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from rest_framework_jwt.settings import api_settings
 from rest_framework_jwt.utils import jwt_response_payload_handler
 
-from watcher.permissions import IsAdminOrWriteOnly
+from watcher.permissions import *
 from watcher.serializer import *
 
 """
@@ -115,6 +115,7 @@ class UserViewSet(viewsets.ModelViewSet):
     """
         Retrieve a model instance.
     """
+
     def retrieve(self, request, *args, **kwargs):
         instance = self.get_object()
         serializer = UserDetailSerializer(instance, context={'request': request})
@@ -141,7 +142,6 @@ class UserViewSet(viewsets.ModelViewSet):
         headers = self.get_success_headers(serializer.data)
         # return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
         return Response(jwt_response_payload_handler(token), status=status.HTTP_201_CREATED, headers=headers)
-        # return Response({"error": "User name already exists"}, status=status.HTTP_409_CONFLICT)
 
 
 class DeviceViewSet(viewsets.ModelViewSet):
@@ -152,64 +152,49 @@ class DeviceViewSet(viewsets.ModelViewSet):
 class MapDetailViewSet(viewsets.ModelViewSet):
     queryset = MapDetail.objects.all()
     serializer_class = MapDetailSerializer
+    # permission_classes = (IsOwnerOrRefuse,)
 
 
 class MapViewSet(viewsets.ModelViewSet):
     queryset = Map.objects.all()
     serializer_class = MapSerializer
 
-    def create(self, request, *args, **kwargs):
-        serializer = self.get_serializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        self.perform_create(serializer)
-
-        data = {'latitude': request.data['latitude'], 'longitude': request.data['longitude'], 'device': request.data['device'],
-                'timestamp': request.data['timestamp']}
-        map_detail_instance = MapDetail.objects.all().filter(device=data['device'])
-        if map_detail_instance is None:
-            detail_serializer = MapDetailSerializer(data=data)
-        else:
-            detail_serializer = MapDetailSerializer(map_detail_instance[0], data=data)
-        detail_serializer.is_valid(raise_exception=True)
-        detail_serializer.save()
-
-        headers = self.get_success_headers(serializer.data)
-        return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
-
 
 class GyrDetailViewSet(viewsets.ModelViewSet):
     queryset = GyrDetail.objects.all()
     serializer_class = GyrDetailSerializer
+    # permission_classes = (IsOwnerOrRefuse,)
 
 
 class GyrViewSet(viewsets.ModelViewSet):
     queryset = Gyr.objects.all()
     serializer_class = GyrSerializer
 
-    def create(self, request, *args, **kwargs):
-        serializer = self.get_serializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        self.perform_create(serializer)
-
-        data = {'accx': request.data['accx'], 'accy': request.data['accy'], 'accz': request.data['accz'],
-                'omegax': request.data['omegax'], 'omegay': request.data['omegay'], 'omegaz': request.data['omegaz'],
-                'anglex': request.data['anglex'], 'angley': request.data['angley'], 'anglez': request.data['anglez'],
-                'fall': request.data['fall'], 'device': request.data['device'], 'timestamp': request.data['timestamp']}
-        gyr_detail_instance = GyrDetail.objects.all().filter(device=data['device'])
-        if gyr_detail_instance is None:
-            detail_serializer = GyrDetailSerializer(data=data)
-        else:
-            detail_serializer = GyrDetailSerializer(gyr_detail_instance[0], data=data)
-        detail_serializer.is_valid(raise_exception=True)
-        detail_serializer.save()
-
-        headers = self.get_success_headers(serializer.data)
-        return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
+    # def create(self, request, *args, **kwargs):
+    #     serializer = self.get_serializer(data=request.data)
+    #     serializer.is_valid(raise_exception=True)
+    #     self.perform_create(serializer)
+    #
+    #     data = {'accx': request.data['accx'], 'accy': request.data['accy'], 'accz': request.data['accz'],
+    #             'omegax': request.data['omegax'], 'omegay': request.data['omegay'], 'omegaz': request.data['omegaz'],
+    #             'anglex': request.data['anglex'], 'angley': request.data['angley'], 'anglez': request.data['anglez'],
+    #             'fall': request.data['fall'], 'device': request.data['device'], 'timestamp': request.data['timestamp']}
+    #     gyr_detail_instance = GyrDetail.objects.filter(device=data['device']).select_related('device')
+    #     if gyr_detail_instance.exists():
+    #         detail_serializer = GyrDetailSerializer(gyr_detail_instance[0], data=data)
+    #     else:
+    #         detail_serializer = GyrDetailSerializer(data=data)
+    #     detail_serializer.is_valid(raise_exception=True)
+    #     detail_serializer.save()
+    #
+    #     headers = self.get_success_headers(serializer.data)
+    #     return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
 
 
 class TempDetailViewSet(viewsets.ModelViewSet):
     queryset = TempDetail.objects.all()
     serializer_class = TempDetailSerializer
+    # permission_classes = (IsOwnerOrRefuse,)
 
 
 class TempViewSet(viewsets.ModelViewSet):
@@ -217,23 +202,82 @@ class TempViewSet(viewsets.ModelViewSet):
     serializer_class = TempSerializer
     lookup_field = 'id'
 
-    def create(self, request, *args, **kwargs):
-        serializer = self.get_serializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        self.perform_create(serializer)
+    # def create(self, request, *args, **kwargs):
+    #     serializer = self.get_serializer(data=request.data)
+    #     serializer.is_valid(raise_exception=True)
+    #     self.perform_create(serializer)
+    #
+    #     data = {'ta': request.data['ta'], 'to': request.data['to'], 'device': request.data['device'],
+    #             'timestamp': request.data['timestamp']}
+    #     temp_detail_instance = TempDetail.objects.filter(device=data['device']).select_related('device')
+    #     if temp_detail_instance.exists():
+    #         detail_serializer = TempDetailSerializer(temp_detail_instance[0], data=data)
+    #     else:
+    #         detail_serializer = TempDetailSerializer(data=data)
+    #     detail_serializer.is_valid(raise_exception=True)
+    #     detail_serializer.save()
+    #
+    #     headers = self.get_success_headers(serializer.data)
+    #     return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
 
-        data = {'ta': request.data['ta'], 'to': request.data['to'], 'device': request.data['device'],
-                'timestamp': request.data['timestamp']}
-        temp_detail_instance = TempDetail.objects.all().filter(device=data['device'])
-        if temp_detail_instance is None:
-            detail_serializer = TempDetailSerializer(data=data)
-        else:
-            detail_serializer = TempDetailSerializer(temp_detail_instance[0], data=data)
-        detail_serializer.is_valid(raise_exception=True)
-        detail_serializer.save()
 
-        headers = self.get_success_headers(serializer.data)
-        return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
+class MapDetailWithRedis(generics.RetrieveAPIView):
+    serializer_class = MapDetailSerializer
+
+    def get_object(self):
+        key = 'map_device_of_' + self.kwargs[self.lookup_field]
+        obj = json.loads(cache.get(key))
+        self.check_object_permissions(self.request, obj)
+        
+        return obj
+
+
+@receiver(pre_save, sender=Map)
+def update_before_map_save(sender, **kwargs):
+    instance = kwargs['instance']
+    instance_detail = MapDetail.objects.filter(device=instance.device_id).select_related('device')
+    data = {'latitude': instance.latitude, 'longitude': instance.longitude,
+            'device': instance.device_id, 'timestamp': instance.timestamp}
+    if instance_detail.exists():
+        serializer = MapDetailSerializer(instance_detail[0], data=data)
+    else:
+        serializer = MapDetailSerializer(data=data)
+    serializer.is_valid(raise_exception=True)
+    serializer.save()
+
+    # redis_data = json.dumps(MapDetail(latitude=instance.latitude, longitude=instance.longitude,
+    #                                   device=instance.device_id, timestamp=instance.timestamp))
+    # key = 'map_device_of_' + instance.device_id
+    # cache.set(key, redis_data)
+
+
+@receiver(pre_save, sender=Temp)
+def update_before_temp_save(sender, **kwargs):
+    instance = kwargs['instance']
+    instance_detail = TempDetail.objects.filter(device=instance.device_id).select_related('device')
+    data = {'ta': instance.ta, 'to': instance.to, 'device': instance.device_id, 'timestamp': instance.timestamp}
+    if instance_detail.exists():
+        serializer = TempDetailSerializer(instance_detail[0], data=data)
+    else:
+        serializer = TempDetailSerializer(data=data)
+    serializer.is_valid(raise_exception=True)
+    serializer.save()
+
+
+@receiver(pre_save, sender=Gyr)
+def update_before_gyr_save(sender, **kwargs):
+    instance = kwargs['instance']
+    instance_detail = GyrDetail.objects.filter(device=instance.device_id).select_related('device')
+    data = {'accx': instance.accx, 'accy': instance.accy, 'accz': instance.accz,
+            'omegax': instance.omegax, 'omegay': instance.omegay, 'omegaz': instance.omegaz,
+            'anglex': instance.anglex, 'angley': instance.angley, 'anglez': instance.anglez,
+            'fall': instance.fall, 'device': instance.device_id, 'timestamp': instance.timestamp}
+    if instance_detail.exists():
+        serializer = GyrDetailSerializer(instance_detail[0], data=data)
+    else:
+        serializer = GyrDetailSerializer(data=data)
+    serializer.is_valid(raise_exception=True)
+    serializer.save()
 
 
 """

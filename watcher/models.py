@@ -1,10 +1,7 @@
-# from django.conf import settings
 from django.db import models
 from django.contrib.auth.models import User
 from django.contrib.auth.models import AbstractUser
-# from django.db.models.signals import post_save
-# from django.dispatch import receiver
-from django.utils import timezone
+# from django.utils import timezone
 from rest_framework.authtoken.models import Token
 
 
@@ -41,8 +38,8 @@ class DeviceList(models.Model):
 
 # 定位信息模型
 class Map(models.Model):
-    latitude = models.CharField(max_length=8)
-    longitude = models.CharField(max_length=8)
+    latitude = models.CharField(max_length=20)
+    longitude = models.CharField(max_length=20)
     time = models.TimeField(auto_now=True)
     device = models.ForeignKey(DeviceList, on_delete=models.CASCADE, related_name='map')
     timestamp = models.TimeField()
@@ -51,14 +48,15 @@ class Map(models.Model):
         return str(self.time)
 
     class Meta:
-        ordering = ['id']
+        ordering = ['-id']
 
 
 class MapDetail(models.Model):
-    latitude = models.CharField(max_length=8)
-    longitude = models.CharField(max_length=8)
+    latitude = models.CharField(max_length=20)
+    longitude = models.CharField(max_length=20)
     time = models.TimeField(auto_now=True)
-    device = models.OneToOneField(DeviceList, on_delete=models.CASCADE, related_name='map_detail', primary_key=True)
+    device = models.OneToOneField(DeviceList, on_delete=models.CASCADE, related_name='map_detail',
+                                  primary_key=True, db_index=True)
     timestamp = models.TimeField()
 
     def __str__(self):
@@ -77,7 +75,7 @@ class Temp(models.Model):
         return str(self.time)
 
     class Meta:
-        ordering = ['id']
+        ordering = ['-id']
 
 
 # 保存最新的体温信息，提高获取速度，以达到app实时的效果
@@ -85,7 +83,8 @@ class TempDetail(models.Model):
     ta = models.CharField(max_length=10)  # 环境温度
     to = models.CharField(max_length=10)  # 目标温度
     time = models.TimeField(auto_now=True)
-    device = models.OneToOneField(DeviceList, on_delete=models.CASCADE, related_name='temper_detail', primary_key=True)
+    device = models.OneToOneField(DeviceList, on_delete=models.CASCADE, related_name='temper_detail',
+                                  primary_key=True, db_index=True)
     timestamp = models.TimeField()
 
     def __str__(self):
@@ -111,7 +110,7 @@ class Gyr(models.Model):  # 陀螺仪数据
         return self.device
 
     class Meta:
-        ordering = ['id']
+        ordering = ['-id']
 
 
 class GyrDetail(models.Model):  # 陀螺仪数据
@@ -125,7 +124,8 @@ class GyrDetail(models.Model):  # 陀螺仪数据
     angley = models.CharField(max_length=25)
     anglez = models.CharField(max_length=25)
     fall = models.BooleanField()
-    device = models.OneToOneField(DeviceList, on_delete=models.CASCADE, related_name='gyr_detail', primary_key=True)
+    device = models.OneToOneField(DeviceList, on_delete=models.CASCADE, related_name='gyr_detail',
+                                  primary_key=True, db_index=True)
     timestamp = models.TimeField()
     time = models.TimeField(auto_now=True)
 

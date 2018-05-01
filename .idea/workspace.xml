@@ -1,21 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5f88348-a39a-4b20-ab40-a4a8de4ae081" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/watcher/migrations/0008_tempdetail.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/watcher/migrations/0009_auto_20180328_0103.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/watcher/migrations/0010_tempdetail.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/watcher/migrations/0011_auto_20180328_1158.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/watcher/migrations/0012_auto_20180328_1209.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/watcher/migrations/0013_auto_20180404_1114.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/watcher/migrations/0014_auto_20180411_2022.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/watcher/migrations/0015_auto_20180411_2030.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/watcher/migrations/0016_auto_20180411_2055.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/watcher/migrations/0017_auto_20180411_2103.py" />
+    <list default="true" id="b5f88348-a39a-4b20-ab40-a4a8de4ae081" name="Default" comment="更换64bitpython+服务器部署Apache">
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/css/autocomplete.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/css/base.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/css/changelists.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/css/dashboard.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/css/fonts.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/css/forms.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/css/login.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/css/responsive.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/css/responsive_rtl.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/css/rtl.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/css/vendor/select2/LICENSE-SELECT2.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/css/vendor/select2/select2.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/css/vendor/select2/select2.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/css/widgets.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/fonts/LICENSE.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/fonts/README.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/fonts/Roboto-Bold-webfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/fonts/Roboto-Light-webfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/fonts/Roboto-Regular-webfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/img/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/img/README.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/img/calendar-icons.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/img/gis/move_vertex_off.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/img/gis/move_vertex_on.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/img/icon-addlink.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/img/icon-alert.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/img/icon-calendar.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/img/icon-changelink.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/img/icon-clock.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/img/icon-deletelink.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/img/icon-no.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/img/icon-unknown-alt.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/img/icon-unknown.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/img/icon-yes.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/img/inline-delete.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/img/search.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/img/selector-icons.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/img/sorting-icons.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/img/tooltag-add.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/img/tooltag-arrowright.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/SelectBox.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/SelectFilter2.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/actions.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/actions.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/admin/DateTimeShortcuts.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/admin/RelatedObjectLookups.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/autocomplete.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/calendar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/cancel.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/change_form.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/collapse.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/collapse.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/core.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/inlines.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/inlines.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/jquery.init.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/popup_response.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/prepopulate.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/prepopulate.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/prepopulate_init.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/timeparse.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/urlify.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/jquery/LICENSE-JQUERY.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/jquery/jquery.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/jquery/jquery.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/LICENSE-SELECT2.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/ar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/az.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/bg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/el.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/en.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/es.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/et.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/eu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/fa.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/fi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/gl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/he.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/hi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/hr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/hu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/id.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/is.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/ja.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/km.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/lt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/lv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/mk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/ms.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/nb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/select2.full.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/select2.full.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/cover.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/watcher/migrations/0018_auto_20180413_1444.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/watcher/migrations/0019_auto_20180413_1611.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/watcher/migrations/0020_auto_20180413_1617.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/watcher/migrations/0021_auto_20180413_1631.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/watcher/migrations/0022_auto_20180413_2039.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/watchBOX/settings.py" afterPath="$PROJECT_DIR$/watchBOX/settings.py" />
-      <change beforePath="$PROJECT_DIR$/watchBOX/urls.py" afterPath="$PROJECT_DIR$/watchBOX/urls.py" />
-      <change beforePath="$PROJECT_DIR$/watcher/admin.py" afterPath="$PROJECT_DIR$/watcher/admin.py" />
+      <change beforePath="$PROJECT_DIR$/watchBOX/wsgi.py" afterPath="$PROJECT_DIR$/watchBOX/wsgi.py" />
       <change beforePath="$PROJECT_DIR$/watcher/models.py" afterPath="$PROJECT_DIR$/watcher/models.py" />
       <change beforePath="$PROJECT_DIR$/watcher/permissions.py" afterPath="$PROJECT_DIR$/watcher/permissions.py" />
       <change beforePath="$PROJECT_DIR$/watcher/serializer.py" afterPath="$PROJECT_DIR$/watcher/serializer.py" />
@@ -45,21 +139,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/watchBOX/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="18" column="62" lean-forward="true" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
+            <state relative-caret-position="207">
+              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="permissions.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/watchBOX/wsgi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="permissions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/watcher/permissions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="23" column="63" lean-forward="true" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+            <state relative-caret-position="391">
+              <caret line="17" column="63" lean-forward="false" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -68,9 +172,11 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/watchBOX/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="805">
-              <caret line="40" column="1" lean-forward="false" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="368">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding>
+                <element signature="e#632#664#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,41 +184,31 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/watcher/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-455">
-              <caret line="165" column="90" lean-forward="false" selection-start-line="165" selection-start-column="90" selection-end-line="165" selection-end-column="90" />
+            <state relative-caret-position="345">
+              <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
               <folding>
-                <element signature="e#50#123#0" expanded="true" />
-                <element signature="e#635#2934#1" expanded="false" />
-                <element signature="e#2979#3511#0" expanded="false" />
-                <element signature="e#3578#5012#0" expanded="false" />
-                <element signature="e#5063#5142#0" expanded="false" />
-                <element signature="e#5196#5273#0" expanded="false" />
-                <element signature="e#9361#11694#1" expanded="false" />
+                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#568#2867#1" expanded="false" />
+                <element signature="e#2912#3444#0" expanded="false" />
+                <element signature="e#3511#4848#0" expanded="false" />
+                <element signature="e#3939#3963#0" expanded="false" />
+                <element signature="e#4899#4978#0" expanded="false" />
+                <element signature="e#5322#5445#0" expanded="false" />
+                <element signature="e#5564#5609#0" expanded="false" />
+                <element signature="e#7139#7184#0" expanded="false" />
+                <element signature="e#9930#10658#0" expanded="false" />
+                <element signature="e#10661#11117#1" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/watcher/admin.py">
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/watcher/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/watcher/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-156">
-              <caret line="44" column="13" lean-forward="false" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="13" />
-              <folding>
-                <element signature="e#35#63#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="299">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -120,12 +216,46 @@
       <file leaf-file-name="serializer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/watcher/serializer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="98" column="53" lean-forward="false" selection-start-line="98" selection-start-column="44" selection-end-line="98" selection-end-column="53" />
+            <state relative-caret-position="575">
+              <caret line="31" column="64" lean-forward="false" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
               <folding>
-                <element signature="e#268#3206#0" expanded="false" />
-                <element signature="e#3281#3575#0" expanded="false" />
-                <element signature="e#3650#3870#0" expanded="false" />
+                <element signature="e#2644#3327#0" expanded="false" />
+                <element signature="e#3402#3837#0" expanded="false" />
+                <element signature="e#3912#4267#0" expanded="false" />
+                <element signature="e#4324#4577#0" expanded="false" />
+                <element signature="e#4344#4442#0" expanded="false" />
+                <element signature="e#4509#4577#0" expanded="false" />
+                <element signature="e#4640#4893#0" expanded="false" />
+                <element signature="e#4825#4893#0" expanded="false" />
+                <element signature="e#4951#5351#0" expanded="false" />
+                <element signature="e#5415#5656#0" expanded="false" />
+                <element signature="e#5713#6117#0" expanded="false" />
+                <element signature="e#6180#6518#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/watcher/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/watcher/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="851">
+              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#687#1117#0" expanded="false" />
+                <element signature="e#2408#2802#0" expanded="false" />
+                <element signature="e#3579#4301#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -145,6 +275,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>static</find>
+      <find>is_valid</find>
+      <find>TEMP</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -167,11 +299,15 @@
         <option value="$PROJECT_DIR$/templates/sign_in.html" />
         <option value="$PROJECT_DIR$/watcher/admin.py" />
         <option value="$PROJECT_DIR$/watchBOX/urls.py" />
-        <option value="$PROJECT_DIR$/watcher/models.py" />
+        <option value="$PROJECT_DIR$/watcher/permissions.py" />
+        <option value="$PROJECT_DIR$/watcher/receiver_page.py" />
+        <option value="$PROJECT_DIR$/watcher/singal_handler.py" />
+        <option value="$PROJECT_DIR$/watcher/handler.py" />
         <option value="$PROJECT_DIR$/watcher/serializer.py" />
         <option value="$PROJECT_DIR$/watcher/views.py" />
+        <option value="$PROJECT_DIR$/watchBOX/wsgi.py" />
+        <option value="$PROJECT_DIR$/watcher/models.py" />
         <option value="$PROJECT_DIR$/watchBOX/settings.py" />
-        <option value="$PROJECT_DIR$/watcher/permissions.py" />
       </list>
     </option>
   </component>
@@ -235,17 +371,12 @@
               <item name="watchBOX" type="462c0819:PsiDirectoryNode" />
               <item name="watchBOX" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="watchBOX" type="b2602c69:ProjectViewProjectNode" />
-              <item name="watchBOX" type="462c0819:PsiDirectoryNode" />
-              <item name="watcher" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -287,15 +418,15 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="watchBOX.settings" />
       </envs>
-      <option name="SDK_HOME" value="D:\Python\PyCharm_project\watchBox\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="watchBox" />
       <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="172.28.172.236" />
+      <option name="port" value="8080" />
+      <option name="host" value="127.0.0.1" />
       <option name="additionalOptions" value="" />
       <option name="browserUrl" value="" />
       <option name="runTestServer" value="false" />
@@ -339,10 +470,17 @@
       <option name="project" value="LOCAL" />
       <updated>1521775077449</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="认证及权限管理">
+      <created>1523453197416</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1523453197416</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -356,14 +494,15 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32894737" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52796054" sideWeight="0.5030257" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.5271829" sideWeight="0.5030257" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2520593" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32784185" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4431631" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.71499175" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17170954" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6447368" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3651316" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1860817" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.4645799" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960753" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -371,10 +510,10 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="295" height="544" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="manage.py@watchBox" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6490939" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="manage.py@watchBox" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.87171054" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.4645799" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -437,74 +576,17 @@
     <MESSAGE value="tem改为temp" />
     <MESSAGE value="更改陀螺仪与温度数据类型" />
     <MESSAGE value="提供获取单例接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="提供获取单例接口" />
+    <MESSAGE value="认证及权限管理" />
+    <MESSAGE value="更换64bitpython+服务器部署Apache" />
+    <option name="LAST_COMMIT_MESSAGE" value="更换64bitpython+服务器部署Apache" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="943">
-          <caret line="41" column="31" lean-forward="true" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/watchBOX/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sign_in.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="897">
-          <caret line="39" column="117" lean-forward="false" selection-start-line="39" selection-start-column="117" selection-end-line="39" selection-end-column="117" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sign_up.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="50" column="24" lean-forward="true" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/workPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common_static/cover.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/watcher/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="21" column="63" lean-forward="true" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
-          <folding>
-            <element signature="e#50#123#0" expanded="true" />
-            <element signature="e#635#2934#1" expanded="false" />
-            <element signature="e#2979#3511#0" expanded="false" />
-            <element signature="e#3578#5012#0" expanded="false" />
-            <element signature="e#5063#5142#0" expanded="false" />
-            <element signature="e#5196#5273#0" expanded="false" />
-            <element signature="e#9361#11694#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/watchBOX/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -525,7 +607,10 @@
         <state relative-caret-position="253">
           <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
           <folding>
-            <element signature="e#35#63#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#687#1117#0" expanded="false" />
+            <element signature="e#2408#2802#0" expanded="false" />
+            <element signature="e#3579#4301#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -541,7 +626,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-          <folding />
+          <folding>
+            <element signature="e#632#664#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -550,13 +637,17 @@
         <state relative-caret-position="69">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <element signature="e#50#123#0" expanded="true" />
-            <element signature="e#635#2934#1" expanded="false" />
-            <element signature="e#2979#3511#0" expanded="false" />
-            <element signature="e#3578#5012#0" expanded="false" />
-            <element signature="e#5063#5142#0" expanded="false" />
-            <element signature="e#5196#5273#0" expanded="false" />
-            <element signature="e#9361#11694#1" expanded="false" />
+            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#568#2867#1" expanded="false" />
+            <element signature="e#2912#3444#0" expanded="false" />
+            <element signature="e#3511#4848#0" expanded="false" />
+            <element signature="e#3939#3963#0" expanded="false" />
+            <element signature="e#4899#4978#0" expanded="false" />
+            <element signature="e#5322#5445#0" expanded="false" />
+            <element signature="e#5564#5609#0" expanded="false" />
+            <element signature="e#7139#7184#0" expanded="false" />
+            <element signature="e#9930#10658#0" expanded="false" />
+            <element signature="e#10661#11117#1" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -587,7 +678,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#632#664#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -596,7 +689,10 @@
         <state relative-caret-position="161">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="e#35#63#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#687#1117#0" expanded="false" />
+            <element signature="e#2408#2802#0" expanded="false" />
+            <element signature="e#3579#4301#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -631,13 +727,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="514" column="8" lean-forward="false" selection-start-line="514" selection-start-column="8" selection-end-line="514" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/base.py" />
     <entry file="file://$PROJECT_DIR$/templates/sign_up.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="759">
@@ -652,84 +742,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/watchBOX/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sign_in.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="32" column="31" lean-forward="false" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/watcher/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/authtoken/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8827">
-          <caret line="104" column="6" lean-forward="false" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/generics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="104" column="8" lean-forward="false" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/viewsets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="167" column="29" lean-forward="true" selection-start-line="167" selection-start-column="29" selection-end-line="167" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/staticfiles/storage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="458" column="26" lean-forward="true" selection-start-line="458" selection-start-column="26" selection-end-line="458" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/query.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="415" column="30" lean-forward="true" selection-start-line="415" selection-start-column="30" selection-end-line="415" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/urls.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/authtoken/admin.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/views.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/viewsets.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/staticfiles/storage.py" />
     <entry file="file://$USER_HOME$/.PyCharm2017.3/system/python_stubs/1142715277/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -737,113 +754,154 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/views.py">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/views.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/fields/__init__.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/datetime.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/relations.py" />
+    <entry file="file://$PROJECT_DIR$/watcher/singal_handler.py" />
+    <entry file="file://$PROJECT_DIR$/watcher/handler.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/utils/model_meta.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/serializers.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/query.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/mixins.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/generics.py" />
+    <entry file="file://$PROJECT_DIR$/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="11" column="53" lean-forward="false" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="53" />
+        <state relative-caret-position="23">
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/mixins.py">
+    <entry file="file://$PROJECT_DIR$/templates/sign_in.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-658">
-          <caret line="786" column="44" lean-forward="true" selection-start-line="786" selection-start-column="44" selection-end-line="786" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/watchBOX/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="40" column="1" lean-forward="false" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="667">
+          <caret line="32" column="31" lean-forward="false" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/watcher/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="420">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/fields/__init__.py">
+    <entry file="file://$PROJECT_DIR$/watcher/apps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-152">
-          <caret line="1288" column="6" lean-forward="false" selection-start-line="1288" selection-start-column="6" selection-end-line="1288" selection-end-column="6" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/watcher/serializer.py">
+    <entry file="file://$PROJECT_DIR$/watcher/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="98" column="53" lean-forward="false" selection-start-line="98" selection-start-column="44" selection-end-line="98" selection-end-column="53" />
-          <folding>
-            <element signature="e#268#3206#0" expanded="false" />
-            <element signature="e#3281#3575#0" expanded="false" />
-            <element signature="e#3650#3870#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/watcher/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-455">
-          <caret line="165" column="90" lean-forward="false" selection-start-line="165" selection-start-column="90" selection-end-line="165" selection-end-column="90" />
-          <folding>
-            <element signature="e#50#123#0" expanded="true" />
-            <element signature="e#635#2934#1" expanded="false" />
-            <element signature="e#2979#3511#0" expanded="false" />
-            <element signature="e#3578#5012#0" expanded="false" />
-            <element signature="e#5063#5142#0" expanded="false" />
-            <element signature="e#5196#5273#0" expanded="false" />
-            <element signature="e#9361#11694#1" expanded="false" />
-          </folding>
+        <state relative-caret-position="299">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/watcher/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-156">
-          <caret line="44" column="13" lean-forward="false" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="13" />
+        <state relative-caret-position="851">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
-            <element signature="e#35#63#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#687#1117#0" expanded="false" />
+            <element signature="e#2408#2802#0" expanded="false" />
+            <element signature="e#3579#4301#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/datetime.py">
+    <entry file="file://$PROJECT_DIR$/watcher/serializer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7639">
-          <caret line="335" column="6" lean-forward="false" selection-start-line="335" selection-start-column="6" selection-end-line="335" selection-end-column="6" />
+        <state relative-caret-position="575">
+          <caret line="31" column="64" lean-forward="false" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
           <folding>
-            <element signature="e#142#162#0" expanded="true" />
+            <element signature="e#2644#3327#0" expanded="false" />
+            <element signature="e#3402#3837#0" expanded="false" />
+            <element signature="e#3912#4267#0" expanded="false" />
+            <element signature="e#4324#4577#0" expanded="false" />
+            <element signature="e#4344#4442#0" expanded="false" />
+            <element signature="e#4509#4577#0" expanded="false" />
+            <element signature="e#4640#4893#0" expanded="false" />
+            <element signature="e#4825#4893#0" expanded="false" />
+            <element signature="e#4951#5351#0" expanded="false" />
+            <element signature="e#5415#5656#0" expanded="false" />
+            <element signature="e#5713#6117#0" expanded="false" />
+            <element signature="e#6180#6518#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/watchBOX/settings.py">
+    <entry file="file://$PROJECT_DIR$/watcher/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="18" column="62" lean-forward="true" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watchBOX/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#632#664#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/watcher/permissions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" column="63" lean-forward="true" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+        <state relative-caret-position="391">
+          <caret line="17" column="63" lean-forward="false" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watcher/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#568#2867#1" expanded="false" />
+            <element signature="e#2912#3444#0" expanded="false" />
+            <element signature="e#3511#4848#0" expanded="false" />
+            <element signature="e#3939#3963#0" expanded="false" />
+            <element signature="e#4899#4978#0" expanded="false" />
+            <element signature="e#5322#5445#0" expanded="false" />
+            <element signature="e#5564#5609#0" expanded="false" />
+            <element signature="e#7139#7184#0" expanded="false" />
+            <element signature="e#9930#10658#0" expanded="false" />
+            <element signature="e#10661#11117#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watchBOX/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collected_static/admin/js/admin/DateTimeShortcuts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="208" column="19" lean-forward="false" selection-start-line="208" selection-start-column="19" selection-end-line="208" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watchBOX/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>

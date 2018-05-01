@@ -19,6 +19,11 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
             'email': {'write_only': True},
         }
 
+    @staticmethod
+    def setup_eager_loading(queryset):
+        queryset = queryset.prefetch_related('devicelist')
+        return queryset
+
     def create(self, validated_data):
         raise_errors_on_nested_writes('create', self, validated_data)
         ModelClass = self.Meta.model
@@ -57,7 +62,6 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
             for field_name, value in many_to_many.items():
                 field = getattr(user, field_name)
                 field.set(value)
-        user.save()
         return user
 
     def update(self, instance, validated_data):
@@ -84,6 +88,11 @@ class UserDetailSerializer(serializers.HyperlinkedModelSerializer):
         model = User
         fields = ("url", "id", "username", "password", "email", "devicelist")
 
+    @staticmethod
+    def setup_eager_loading(queryset):
+        queryset = queryset.prefetch_related('devicelist')
+        return queryset
+
 
 class DeviceListSerializer(serializers.HyperlinkedModelSerializer):
     user = serializers.HyperlinkedRelatedField(many=True, queryset=User.objects.all(), view_name="user-detail")
@@ -92,17 +101,32 @@ class DeviceListSerializer(serializers.HyperlinkedModelSerializer):
         model = DeviceList
         fields = ("url", "number", "watchman", "fall_count", "user")
 
+    @staticmethod
+    def setup_eager_loading(queryset):
+        queryset = queryset.prefetch_related('user')
+        return queryset
+
 
 class MapSerializer(serializers.ModelSerializer):
     class Meta:
         model = Map
         fields = ("url", "id", "latitude", "longitude", "time", "device", "timestamp")
 
+    @staticmethod
+    def setup_eager_loading(queryset):
+        queryset = queryset.select_related('device')
+        return queryset
+
 
 class MapDetailSerializer(serializers.ModelSerializer):
     class Meta:
         model = MapDetail
         fields = ("url", "latitude", "longitude", "time", "device", "timestamp")
+
+    @staticmethod
+    def setup_eager_loading(queryset):
+        queryset = queryset.select_related('device')
+        return queryset
 
 
 class TempSerializer(serializers.ModelSerializer):
@@ -114,11 +138,21 @@ class TempSerializer(serializers.ModelSerializer):
             # 'device': {'lookup_field': 'username'}
         }
 
+    @staticmethod
+    def setup_eager_loading(queryset):
+        queryset = queryset.select_related('device')
+        return queryset
+
 
 class TempDetailSerializer(serializers.ModelSerializer):
     class Meta:
         model = TempDetail
         fields = ("url", "ta", "to", "time", "device", "timestamp")
+
+    @staticmethod
+    def setup_eager_loading(queryset):
+        queryset = queryset.select_related('device')
+        return queryset
 
 
 class GyrSerializer(serializers.ModelSerializer):
@@ -129,9 +163,24 @@ class GyrSerializer(serializers.ModelSerializer):
         fields = ("url", "id", "accx", "accy", "accz", "omegax",
                   "omegay", "omegaz", "anglex", "angley", "anglez", "fall", "device", "time", "timestamp")
 
+    @staticmethod
+    def setup_eager_loading(queryset):
+        queryset = queryset.select_related('device')
+        return queryset
+
 
 class GyrDetailSerializer(serializers.ModelSerializer):
     class Meta:
         model = GyrDetail
         fields = ("url", "accx", "accy", "accz", "omegax",
                   "omegay", "omegaz", "anglex", "angley", "anglez", "fall", "device", "time", "timestamp")
+
+    @staticmethod
+    def setup_eager_loading(queryset):
+        queryset = queryset.select_related('device')
+        return queryset
+
+# product_list_to_insert = list()
+# for x in range(10):
+#     product_list_to_insert.append(Product(name='product name ' + str(x), price=x))
+# Product.objects.bulk_create(product_list_to_insert)

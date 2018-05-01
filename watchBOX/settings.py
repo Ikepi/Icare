@@ -23,10 +23,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = ')kj8lo)*1x2ba35kr@ynh7f%be9)x#s=_8aocvbvtyp+q6_(3@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = TEMPLATE_DEBUG = False
 
-# ALLOWED_HOSTS = ['172.26.19.220']
-ALLOWED_HOSTS = ["172.28.172.236"]  # 实验室IP
+# if DEBUG:  # 根据DEBUG来确定
+#     ALLOWED_HOSTS = [""]
+# else:
+ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
 
 # Application definition
 
@@ -38,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'watcher.apps.WatcherConfig',
-    'rest_framework',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -82,6 +84,31 @@ DATABASES = {
         'PASSWORD': 'ljy951602199',
         'HOST': '127.0.0.1',
         'PORT': '3306',
+    }
+}
+
+# CACHES = {
+#     'default': {
+#         'BACKEND': 'redis_cache.cache.RedisCache',
+#         'LOCATION': '127.0.0.1:6379',
+#         "OPTIONS": {
+#             "CLIENT_CLASS": "redis_cache.client.DefaultClient",
+#         },
+#     },
+# }
+# REDIS_TIMEOUT = 7 * 24 * 60 * 60
+# CUBES_REDIS_TIMEOUT = 60 * 60
+# NEVER_REDIS_TIMEOUT = 365 * 24 * 60 * 60
+
+CACHES = {
+    "default": {
+        # 后台引擎
+        "BACKEND": "django_redis.cache.RedisCache",
+        # 缓存器类型://host:port/1号库
+        "LOCATION": "redis://127.0.0.1:6379/1",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
     }
 }
 
