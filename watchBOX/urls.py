@@ -28,9 +28,12 @@ router.register("devicelist", DeviceViewSet)
 router.register("gyr", GyrViewSet)
 router.register("temp", TempViewSet)
 router.register("map", MapViewSet)
+router.register("ecg", EcgAndRateViewSet)
 router.register("temp-detail", TempDetailViewSet)
 router.register("gyr-detail", GyrDetailViewSet)
 router.register("map-detail", MapDetailViewSet)
+router.register("ecg-detail", EcgAndRateDetailViewSet)
+
 
 
 urlpatterns = [

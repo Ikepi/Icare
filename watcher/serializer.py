@@ -33,7 +33,6 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
             if relation_info.to_many and (field_name in validated_data):
                 many_to_many[field_name] = validated_data.pop(field_name)
         try:
-            # instance = ModelClass.objects.create(**validated_data)
             user = User.objects.create(
                 username=validated_data['username'],
                 email=validated_data['email'],
@@ -180,6 +179,30 @@ class GyrDetailSerializer(serializers.ModelSerializer):
         queryset = queryset.select_related('device')
         return queryset
 
+
+class EcgAndRateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = EcgAndRate
+        fields = ("url", "id", "ecgdata", "rate", "device", "time", "timestamp")
+
+    @staticmethod
+    def setup_eager_loading(queryset):
+        queryset = queryset.select_related('device')
+        return queryset
+
+
+class EcgAndRateDetailSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = EcgAndRateDetail
+        fields = ("url", "ecgdata", "rate", "device", "time", "timestamp")
+
+    @staticmethod
+    def setup_eager_loading(queryset):
+        queryset = queryset.select_related('device')
+        return queryset
+
+
+# 批量操作
 # product_list_to_insert = list()
 # for x in range(10):
 #     product_list_to_insert.append(Product(name='product name ' + str(x), price=x))

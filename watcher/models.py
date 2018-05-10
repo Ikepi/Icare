@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.contrib.auth.models import AbstractUser
-# from django.utils import timezone
+from rest_framework import fields
 from rest_framework.authtoken.models import Token
 
 
@@ -13,12 +13,6 @@ from rest_framework.authtoken.models import Token
 #
 #     class Meta(AbstractUser.Meta):
 #         pass
-
-# 普通token认证，用JSON Web Token就不需要了
-# @receiver(post_save, sender=settings.AUTH_USER_MODEL)
-# def create_auth_token(sender, instance=None, created=False, **kwargs):
-#     if created:
-#         Token.objects.create(user=instance)
 
 
 # 设备列表
@@ -132,4 +126,29 @@ class GyrDetail(models.Model):  # 陀螺仪数据
     def __str__(self):
         return self.device
 
+
 # 心电图
+class EcgAndRate(models.Model):
+    ecgdata = fields.JSONField()
+    rate = models.IntegerField()
+    device = models.ForeignKey(DeviceList, on_delete=models.CASCADE, related_name='ecg')
+    timestamp = models.TimeField()
+    time = models.TimeField(auto_now=True)
+
+    def __str__(self):
+        return self.device
+
+    class Meta:
+        ordering = ['-id']
+
+
+class EcgAndRateDetail(models.Model):
+    ecgdata = fields.JSONField()
+    rate = models.IntegerField()
+    device = models.OneToOneField(DeviceList, on_delete=models.CASCADE, related_name='ecg_detail',
+                                  primary_key=True, db_index=True)
+    timestamp = models.TimeField()
+    time = models.TimeField(auto_now=True)
+
+    def __str__(self):
+        return self.device

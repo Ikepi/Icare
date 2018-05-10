@@ -25,11 +25,8 @@ SECRET_KEY = ')kj8lo)*1x2ba35kr@ynh7f%be9)x#s=_8aocvbvtyp+q6_(3@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = TEMPLATE_DEBUG = False
 
-# if DEBUG:  # 根据DEBUG来确定
-#     ALLOWED_HOSTS = [""]
-# else:
-ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
-
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "172.28.140.219"]
+# ALLOWED_HOSTS = ["172.27.148.47"]
 # Application definition
 
 INSTALLED_APPS = [
@@ -87,15 +84,6 @@ DATABASES = {
     }
 }
 
-# CACHES = {
-#     'default': {
-#         'BACKEND': 'redis_cache.cache.RedisCache',
-#         'LOCATION': '127.0.0.1:6379',
-#         "OPTIONS": {
-#             "CLIENT_CLASS": "redis_cache.client.DefaultClient",
-#         },
-#     },
-# }
 # REDIS_TIMEOUT = 7 * 24 * 60 * 60
 # CUBES_REDIS_TIMEOUT = 60 * 60
 # NEVER_REDIS_TIMEOUT = 365 * 24 * 60 * 60

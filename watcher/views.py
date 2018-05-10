@@ -221,6 +221,16 @@ class TempViewSet(viewsets.ModelViewSet):
     #     return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
 
 
+class EcgAndRateViewSet(viewsets.ModelViewSet):
+    queryset = EcgAndRate.objects.all()
+    serializer_class = EcgAndRateSerializer
+
+
+class EcgAndRateDetailViewSet(viewsets.ModelViewSet):
+    queryset = EcgAndRateDetail.objects.all()
+    serializer_class = EcgAndRateDetailSerializer
+
+
 class MapDetailWithRedis(generics.RetrieveAPIView):
     serializer_class = MapDetailSerializer
 
@@ -276,6 +286,20 @@ def update_before_gyr_save(sender, **kwargs):
         serializer = GyrDetailSerializer(instance_detail[0], data=data)
     else:
         serializer = GyrDetailSerializer(data=data)
+    serializer.is_valid(raise_exception=True)
+    serializer.save()
+
+
+@receiver(pre_save, sender=EcgAndRate)
+def update_before_gyr_save(sender, **kwargs):
+    instance = kwargs['instance']
+    instance_detail = EcgAndRateDetail.objects.filter(device=instance.device_id).select_related('device')
+    data = {'ecgdata': instance.ecgdata, 'rate': instance.rate,
+            'device': instance.device_id, 'timestamp': instance.timestamp}
+    if instance_detail.exists():
+        serializer = EcgAndRateDetailSerializer(instance_detail[0], data=data)
+    else:
+        serializer = EcgAndRateDetailSerializer(data=data)
     serializer.is_valid(raise_exception=True)
     serializer.save()
 
