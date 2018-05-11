@@ -25,8 +25,7 @@ SECRET_KEY = ')kj8lo)*1x2ba35kr@ynh7f%be9)x#s=_8aocvbvtyp+q6_(3@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "172.28.140.219"]
-# ALLOWED_HOSTS = ["172.27.148.47"]
+ALLOWED_HOSTS = ["172.28.140.219", "localhost", "127.0.0.1"]
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,7 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'watcher.apps.WatcherConfig',
-    'rest_framework'
+    'rest_framework',
+    'rest_framework.authtoken',  # 设置token
 ]
 
 MIDDLEWARE = [
@@ -164,4 +164,4 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "common_static"),
 )
 
-AUTH_USER_MODEL = 'auth.User'
+# AUTH_USER_MODEL = 'auth.User'

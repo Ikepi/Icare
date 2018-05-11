@@ -1,14 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5f88348-a39a-4b20-ab40-a4a8de4ae081" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/watcher/migrations/0023_auto_20180510_1647.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/watcher/migrations/0024_auto_20180510_1738.py" />
+    <list default="true" id="b5f88348-a39a-4b20-ab40-a4a8de4ae081" name="Default" comment="增加心电心率模块">
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/pt-BR.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/pt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/ro.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/sk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/sr-Cyrl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/sr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/th.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/uk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/vi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/zh-CN.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/select2/i18n/zh-TW.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/xregexp/xregexp.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/xregexp/xregexp.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/watcher/migrations/0002_auto_20180510_2141.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/watchBOX/settings.py" afterPath="$PROJECT_DIR$/watchBOX/settings.py" />
       <change beforePath="$PROJECT_DIR$/watchBOX/urls.py" afterPath="$PROJECT_DIR$/watchBOX/urls.py" />
-      <change beforePath="$PROJECT_DIR$/watcher/admin.py" afterPath="$PROJECT_DIR$/watcher/admin.py" />
+      <change beforePath="$PROJECT_DIR$/watcher/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/watcher/migrations/0001_initial.py" />
+      <change beforePath="$PROJECT_DIR$/watcher/migrations/0002_devicelist_user.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/watcher/migrations/0003_auto_20180319_2021.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/watcher/migrations/0004_auto_20180320_1617.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/watcher/migrations/0005_auto_20180320_1704.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/watcher/migrations/0006_auto_20180321_1511.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/watcher/migrations/0007_auto_20180322_1135.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/watcher/migrations/0008_tempdetail.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/watcher/migrations/0009_auto_20180328_0103.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/watcher/migrations/0010_tempdetail.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/watcher/migrations/0011_auto_20180328_1158.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/watcher/migrations/0012_auto_20180328_1209.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/watcher/migrations/0013_auto_20180404_1114.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/watcher/migrations/0014_auto_20180411_2022.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/watcher/migrations/0015_auto_20180411_2030.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/watcher/migrations/0016_auto_20180411_2055.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/watcher/migrations/0017_auto_20180411_2103.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/watcher/migrations/0018_auto_20180413_1444.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/watcher/migrations/0019_auto_20180413_1611.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/watcher/migrations/0020_auto_20180413_1617.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/watcher/migrations/0021_auto_20180413_1631.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/watcher/migrations/0022_auto_20180413_2039.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/watcher/migrations/0023_auto_20180510_1647.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/watcher/migrations/0024_auto_20180510_1738.py" afterPath="" />
       <change beforePath="$PROJECT_DIR$/watcher/models.py" afterPath="$PROJECT_DIR$/watcher/models.py" />
+      <change beforePath="$PROJECT_DIR$/watcher/permissions.py" afterPath="$PROJECT_DIR$/watcher/permissions.py" />
       <change beforePath="$PROJECT_DIR$/watcher/serializer.py" afterPath="$PROJECT_DIR$/watcher/serializer.py" />
       <change beforePath="$PROJECT_DIR$/watcher/views.py" afterPath="$PROJECT_DIR$/watcher/views.py" />
     </list>
@@ -36,11 +78,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/watchBOX/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+            <state relative-caret-position="322">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -49,8 +91,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/watchBOX/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="35" />
+            <state relative-caret-position="920">
+              <caret line="45" column="3" lean-forward="false" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
               <folding>
                 <element signature="e#632#664#0" expanded="true" />
               </folding>
@@ -61,36 +103,32 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/watcher/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="123" column="8" lean-forward="false" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="8" />
+            <state relative-caret-position="340">
+              <caret line="196" column="43" lean-forward="true" selection-start-line="196" selection-start-column="43" selection-end-line="196" selection-end-column="43" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
                 <element signature="e#568#2867#1" expanded="false" />
                 <element signature="e#2912#3444#0" expanded="false" />
+                <element signature="e#3511#4848#0" expanded="false" />
                 <element signature="e#4899#4978#0" expanded="false" />
-                <element signature="e#5032#5155#0" expanded="false" />
-                <element signature="e#5203#5268#0" expanded="false" />
-                <element signature="e#5322#5445#0" expanded="false" />
-                <element signature="e#5493#6813#0" expanded="false" />
-                <element signature="e#5564#5609#0" expanded="false" />
-                <element signature="e#6868#6993#0" expanded="false" />
-                <element signature="e#7042#8086#0" expanded="false" />
-                <element signature="e#7139#7184#0" expanded="false" />
-                <element signature="e#8431#8686#0" expanded="false" />
-                <element signature="e#8771#9565#0" expanded="false" />
-                <element signature="e#9652#10131#0" expanded="false" />
-                <element signature="e#10216#10944#0" expanded="false" />
-                <element signature="e#11562#12018#1" expanded="false" />
+                <element signature="e#5032#5153#0" expanded="false" />
+                <element signature="e#5201#5266#0" expanded="false" />
+                <element signature="e#5489#6809#0" expanded="false" />
+                <element signature="e#5560#5605#0" expanded="false" />
+                <element signature="e#7133#7178#0" expanded="false" />
+                <element signature="e#8469#8724#0" expanded="false" />
+                <element signature="e#8809#9603#0" expanded="false" />
+                <element signature="e#11600#12056#1" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/watcher/admin.py">
+      <file leaf-file-name="permissions.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/watcher/permissions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+            <state relative-caret-position="276">
+              <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -99,40 +137,34 @@
       <file leaf-file-name="serializer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/watcher/serializer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="713">
-              <caret line="37" column="46" lean-forward="false" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
+            <state relative-caret-position="222">
+              <caret line="193" column="47" lean-forward="false" selection-start-line="193" selection-start-column="43" selection-end-line="193" selection-end-column="47" />
               <folding>
-                <element signature="e#3333#3768#0" expanded="false" />
-                <element signature="e#3843#4198#0" expanded="false" />
-                <element signature="e#4255#4508#0" expanded="false" />
-                <element signature="e#4275#4373#0" expanded="false" />
-                <element signature="e#4440#4508#0" expanded="false" />
-                <element signature="e#4571#4824#0" expanded="false" />
-                <element signature="e#4756#4824#0" expanded="false" />
-                <element signature="e#4882#5282#0" expanded="false" />
-                <element signature="e#5346#5587#0" expanded="false" />
-                <element signature="e#5644#6048#0" expanded="false" />
-                <element signature="e#6111#6449#0" expanded="false" />
-                <element signature="e#6381#6449#0" expanded="false" />
+                <element signature="e#0#16#0" expanded="true" />
+                <element signature="e#757#831#0" expanded="false" />
+                <element signature="e#2610#3293#0" expanded="false" />
+                <element signature="e#4448#4516#0" expanded="false" />
+                <element signature="e#4764#4832#0" expanded="false" />
+                <element signature="e#6389#6457#0" expanded="false" />
+                <element signature="e#8699#9501#0" expanded="false" />
+                <element signature="e#9757#9825#0" expanded="false" />
+                <element signature="e#9873#11691#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/watcher/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1311">
-              <caret line="144" column="37" lean-forward="false" selection-start-line="144" selection-start-column="37" selection-end-line="144" selection-end-column="37" />
+            <state relative-caret-position="264">
+              <caret line="140" column="26" lean-forward="true" selection-start-line="140" selection-start-column="26" selection-end-line="140" selection-end-column="26" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
-                <element signature="e#458#888#0" expanded="false" />
-                <element signature="e#929#1284#0" expanded="false" />
-                <element signature="e#1322#1710#0" expanded="false" />
-                <element signature="e#1748#2109#0" expanded="false" />
-                <element signature="e#2179#2573#0" expanded="false" />
-                <element signature="e#2614#3303#0" expanded="false" />
-                <element signature="e#3350#4072#0" expanded="false" />
+                <element signature="e#424#854#0" expanded="false" />
+                <element signature="e#895#1250#0" expanded="false" />
+                <element signature="e#1288#1676#0" expanded="false" />
+                <element signature="e#1714#2075#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -158,6 +190,7 @@
       <find>setup_eager_loading</find>
       <find>password</find>
       <find>AnonymousUser</find>
+      <find>Model</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -178,16 +211,16 @@
         <option value="$PROJECT_DIR$/templates/workPage.html" />
         <option value="$PROJECT_DIR$/watcher/forms.py" />
         <option value="$PROJECT_DIR$/templates/sign_in.html" />
-        <option value="$PROJECT_DIR$/watcher/permissions.py" />
         <option value="$PROJECT_DIR$/watcher/receiver_page.py" />
         <option value="$PROJECT_DIR$/watcher/singal_handler.py" />
         <option value="$PROJECT_DIR$/watcher/handler.py" />
         <option value="$PROJECT_DIR$/watchBOX/wsgi.py" />
         <option value="$PROJECT_DIR$/watcher/admin.py" />
-        <option value="$PROJECT_DIR$/watcher/views.py" />
-        <option value="$PROJECT_DIR$/watchBOX/urls.py" />
         <option value="$PROJECT_DIR$/watcher/models.py" />
+        <option value="$PROJECT_DIR$/watchBOX/urls.py" />
+        <option value="$PROJECT_DIR$/watcher/views.py" />
         <option value="$PROJECT_DIR$/watcher/serializer.py" />
+        <option value="$PROJECT_DIR$/watcher/permissions.py" />
         <option value="$PROJECT_DIR$/watchBOX/settings.py" />
       </list>
     </option>
@@ -199,7 +232,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
+    <option name="x" value="578" />
+    <option name="y" value="10" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -250,19 +284,20 @@
             <path>
               <item name="watchBOX" type="b2602c69:ProjectViewProjectNode" />
               <item name="watchBOX" type="462c0819:PsiDirectoryNode" />
-              <item name="watchBOX" type="462c0819:PsiDirectoryNode" />
+              <item name="watcher" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="watchBOX" type="b2602c69:ProjectViewProjectNode" />
               <item name="watchBOX" type="462c0819:PsiDirectoryNode" />
               <item name="watcher" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -370,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1525143441941</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="增加心电心率模块">
+      <created>1525954426014</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1525954426014</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -388,26 +430,27 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32894737" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.5271829" sideWeight="0.5030257" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6513158" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2520593" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32784185" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3651316" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.204236" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32730263" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6019737" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38980263" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27912253" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960753" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.39967105" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.39967105" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="295" height="544" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="manage.py@watchBox" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5986842" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="manage.py@watchBox" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.65460527" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.4645799" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32894737" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -471,58 +514,16 @@
     <MESSAGE value="提供获取单例接口" />
     <MESSAGE value="认证及权限管理" />
     <MESSAGE value="更换64bitpython+服务器部署Apache" />
-    <option name="LAST_COMMIT_MESSAGE" value="更换64bitpython+服务器部署Apache" />
+    <MESSAGE value="增加心电心率模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加心电心率模块" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/watchBOX/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/watchBOX/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-          <folding>
-            <element signature="e#632#664#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/watcher/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#568#2867#1" expanded="false" />
-            <element signature="e#2912#3444#0" expanded="false" />
-            <element signature="e#4899#4978#0" expanded="false" />
-            <element signature="e#5032#5155#0" expanded="false" />
-            <element signature="e#5203#5268#0" expanded="false" />
-            <element signature="e#5322#5445#0" expanded="false" />
-            <element signature="e#5493#6813#0" expanded="false" />
-            <element signature="e#5564#5609#0" expanded="false" />
-            <element signature="e#6868#6993#0" expanded="false" />
-            <element signature="e#7042#8086#0" expanded="false" />
-            <element signature="e#7139#7184#0" expanded="false" />
-            <element signature="e#8431#8686#0" expanded="false" />
-            <element signature="e#8771#9565#0" expanded="false" />
-            <element signature="e#9652#10131#0" expanded="false" />
-            <element signature="e#10216#10944#0" expanded="false" />
-            <element signature="e#11562#12018#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/watchBOX/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1978">
@@ -561,13 +562,10 @@
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
-            <element signature="e#458#888#0" expanded="false" />
-            <element signature="e#929#1284#0" expanded="false" />
-            <element signature="e#1322#1710#0" expanded="false" />
-            <element signature="e#1748#2109#0" expanded="false" />
-            <element signature="e#2179#2573#0" expanded="false" />
-            <element signature="e#2614#3303#0" expanded="false" />
-            <element signature="e#3350#4072#0" expanded="false" />
+            <element signature="e#424#854#0" expanded="false" />
+            <element signature="e#895#1250#0" expanded="false" />
+            <element signature="e#1288#1676#0" expanded="false" />
+            <element signature="e#1714#2075#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -682,13 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/watcher/permissions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="63" lean-forward="false" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/watchBOX/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -703,16 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/watchBOX/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="35" />
-          <folding>
-            <element signature="e#632#664#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv1/Lib/site-packages/django/db/models/fields/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
@@ -722,88 +703,106 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/venv1/Lib/site-packages/rest_framework/fields.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-151">
-          <caret line="1584" column="8" lean-forward="false" selection-start-line="1584" selection-start-column="8" selection-end-line="1584" selection-end-column="8" />
+        <state relative-caret-position="884">
+          <caret line="1574" column="6" lean-forward="false" selection-start-line="1574" selection-start-column="6" selection-end-line="1574" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watcher/migrations/0030_auto_20180510_2100.py" />
+    <entry file="file://$PROJECT_DIR$/watcher/migrations/0031_auto_20180510_2123.py" />
+    <entry file="file://$PROJECT_DIR$/watchBOX/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="920">
+          <caret line="45" column="3" lean-forward="false" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
+          <folding>
+            <element signature="e#632#664#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv1/Lib/site-packages/rest_framework/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16208">
+          <caret line="892" column="41" lean-forward="true" selection-start-line="892" selection-start-column="41" selection-end-line="892" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/watcher/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+        <state relative-caret-position="374">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/watcher/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1311">
-          <caret line="144" column="37" lean-forward="false" selection-start-line="144" selection-start-column="37" selection-end-line="144" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <element signature="e#458#888#0" expanded="false" />
-            <element signature="e#929#1284#0" expanded="false" />
-            <element signature="e#1322#1710#0" expanded="false" />
-            <element signature="e#1748#2109#0" expanded="false" />
-            <element signature="e#2179#2573#0" expanded="false" />
-            <element signature="e#2614#3303#0" expanded="false" />
-            <element signature="e#3350#4072#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/watcher/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="123" column="8" lean-forward="false" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="8" />
+        <state relative-caret-position="340">
+          <caret line="196" column="43" lean-forward="true" selection-start-line="196" selection-start-column="43" selection-end-line="196" selection-end-column="43" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
             <element signature="e#568#2867#1" expanded="false" />
             <element signature="e#2912#3444#0" expanded="false" />
+            <element signature="e#3511#4848#0" expanded="false" />
             <element signature="e#4899#4978#0" expanded="false" />
-            <element signature="e#5032#5155#0" expanded="false" />
-            <element signature="e#5203#5268#0" expanded="false" />
-            <element signature="e#5322#5445#0" expanded="false" />
-            <element signature="e#5493#6813#0" expanded="false" />
-            <element signature="e#5564#5609#0" expanded="false" />
-            <element signature="e#6868#6993#0" expanded="false" />
-            <element signature="e#7042#8086#0" expanded="false" />
-            <element signature="e#7139#7184#0" expanded="false" />
-            <element signature="e#8431#8686#0" expanded="false" />
-            <element signature="e#8771#9565#0" expanded="false" />
-            <element signature="e#9652#10131#0" expanded="false" />
-            <element signature="e#10216#10944#0" expanded="false" />
-            <element signature="e#11562#12018#1" expanded="false" />
+            <element signature="e#5032#5153#0" expanded="false" />
+            <element signature="e#5201#5266#0" expanded="false" />
+            <element signature="e#5489#6809#0" expanded="false" />
+            <element signature="e#5560#5605#0" expanded="false" />
+            <element signature="e#7133#7178#0" expanded="false" />
+            <element signature="e#8469#8724#0" expanded="false" />
+            <element signature="e#8809#9603#0" expanded="false" />
+            <element signature="e#11600#12056#1" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/watcher/serializer.py">
+    <entry file="file://$PROJECT_DIR$/watcher/permissions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="37" column="46" lean-forward="false" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
-          <folding>
-            <element signature="e#3333#3768#0" expanded="false" />
-            <element signature="e#3843#4198#0" expanded="false" />
-            <element signature="e#4255#4508#0" expanded="false" />
-            <element signature="e#4275#4373#0" expanded="false" />
-            <element signature="e#4440#4508#0" expanded="false" />
-            <element signature="e#4571#4824#0" expanded="false" />
-            <element signature="e#4756#4824#0" expanded="false" />
-            <element signature="e#4882#5282#0" expanded="false" />
-            <element signature="e#5346#5587#0" expanded="false" />
-            <element signature="e#5644#6048#0" expanded="false" />
-            <element signature="e#6111#6449#0" expanded="false" />
-            <element signature="e#6381#6449#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="276">
+          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/watchBOX/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        <state relative-caret-position="322">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watcher/serializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="193" column="47" lean-forward="false" selection-start-line="193" selection-start-column="43" selection-end-line="193" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+            <element signature="e#757#831#0" expanded="false" />
+            <element signature="e#2610#3293#0" expanded="false" />
+            <element signature="e#4448#4516#0" expanded="false" />
+            <element signature="e#4764#4832#0" expanded="false" />
+            <element signature="e#6389#6457#0" expanded="false" />
+            <element signature="e#8699#9501#0" expanded="false" />
+            <element signature="e#9757#9825#0" expanded="false" />
+            <element signature="e#9873#11691#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/watcher/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="140" column="26" lean-forward="true" selection-start-line="140" selection-start-column="26" selection-end-line="140" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#424#854#0" expanded="false" />
+            <element signature="e#895#1250#0" expanded="false" />
+            <element signature="e#1288#1676#0" expanded="false" />
+            <element signature="e#1714#2075#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

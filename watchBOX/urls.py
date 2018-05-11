@@ -35,7 +35,6 @@ router.register("map-detail", MapDetailViewSet)
 router.register("ecg-detail", EcgAndRateDetailViewSet)
 
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls)),

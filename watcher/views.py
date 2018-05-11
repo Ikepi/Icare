@@ -152,7 +152,7 @@ class DeviceViewSet(viewsets.ModelViewSet):
 class MapDetailViewSet(viewsets.ModelViewSet):
     queryset = MapDetail.objects.all()
     serializer_class = MapDetailSerializer
-    # permission_classes = (IsOwnerOrRefuse,)
+    permission_classes = (IsOwnerOrRefuse,)
 
 
 class MapViewSet(viewsets.ModelViewSet):
@@ -163,7 +163,7 @@ class MapViewSet(viewsets.ModelViewSet):
 class GyrDetailViewSet(viewsets.ModelViewSet):
     queryset = GyrDetail.objects.all()
     serializer_class = GyrDetailSerializer
-    # permission_classes = (IsOwnerOrRefuse,)
+    permission_classes = (IsOwnerOrRefuse,)
 
 
 class GyrViewSet(viewsets.ModelViewSet):
@@ -194,7 +194,7 @@ class GyrViewSet(viewsets.ModelViewSet):
 class TempDetailViewSet(viewsets.ModelViewSet):
     queryset = TempDetail.objects.all()
     serializer_class = TempDetailSerializer
-    # permission_classes = (IsOwnerOrRefuse,)
+    permission_classes = (IsOwnerOrRefuse,)
 
 
 class TempViewSet(viewsets.ModelViewSet):
@@ -229,6 +229,7 @@ class EcgAndRateViewSet(viewsets.ModelViewSet):
 class EcgAndRateDetailViewSet(viewsets.ModelViewSet):
     queryset = EcgAndRateDetail.objects.all()
     serializer_class = EcgAndRateDetailSerializer
+    permission_classes = (IsOwnerOrRefuse,)
 
 
 class MapDetailWithRedis(generics.RetrieveAPIView):
