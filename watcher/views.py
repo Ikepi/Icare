@@ -292,7 +292,7 @@ def update_before_gyr_save(sender, **kwargs):
 
 
 @receiver(pre_save, sender=EcgAndRate)
-def update_before_gyr_save(sender, **kwargs):
+def update_before_ecg_save(sender, **kwargs):
     instance = kwargs['instance']
     instance_detail = EcgAndRateDetail.objects.filter(device=instance.device_id).select_related('device')
     data = {'ecgdata': instance.ecgdata, 'rate': instance.rate,

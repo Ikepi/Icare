@@ -8,9 +8,9 @@ class IsOwnerOrRefuse(permissions.BasePermission):
     def has_object_permission(self, request, view, obj):  # 访问对象时才会进行权限检测
         return obj.device in request.user.devicelist.all() or request.user.is_superuser
 
-    # def has_permission(self, request, view):  # 访问这个接口时，会进行权限检测
-    #     if request.method in permissions.SAFE_METHODS or request.user.is_superuser:
-    #         return True
+    def has_permission(self, request, view):  # 访问这个接口时，会进行权限检测
+        if request.method in permissions.SAFE_METHODS or request.user.is_superuser:
+            return True
 
 
 class IsAdminOrWriteOnly(permissions.BasePermission):  # 针对用户管理

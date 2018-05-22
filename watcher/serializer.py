@@ -64,7 +64,7 @@ class UserSerializer(serializers.ModelSerializer):
         return user
 
     def update(self, instance, validated_data):
-        # raise_errors_on_nested_writes('update', self, validated_data)
+        raise_errors_on_nested_writes('update', self, validated_data)
         info = model_meta.get_field_info(instance)
         for attr, value in validated_data.items():
             if attr in info.relations and info.relations[attr].to_many:

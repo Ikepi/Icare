@@ -128,8 +128,8 @@ class GyrDetail(models.Model):  # 陀螺仪数据
 
 # 心电图
 class EcgAndRate(models.Model):
-    ecgdata = models.CharField(max_length=3000)
-    rate = models.CharField(max_length=4)
+    ecgdata = models.TextField()
+    rate = models.CharField(max_length=10)
     device = models.ForeignKey(DeviceList, on_delete=models.CASCADE, related_name='ecg')
     timestamp = models.TimeField()
     time = models.TimeField(auto_now=True)
@@ -142,8 +142,8 @@ class EcgAndRate(models.Model):
 
 
 class EcgAndRateDetail(models.Model):
-    ecgdata = models.CharField(max_length=3000)
-    rate = models.CharField(max_length=4)
+    ecgdata = models.TextField()
+    rate = models.CharField(max_length=10)
     device = models.OneToOneField(DeviceList, on_delete=models.CASCADE, related_name='ecg_detail',
                                   primary_key=True, db_index=True)
     timestamp = models.TimeField()
