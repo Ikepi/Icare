@@ -1,8 +1,17 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.contrib.auth.models import AbstractUser
+from rest_framework.authtoken.models import Token
+
 
 # Create your models here.
 # 用户信息模型  auth.User
+
+# class User(AbstractUser):  # 自定义用户模型
+#     nickname = models.CharField(max_length=50, blank=True)
+#
+#     class Meta(AbstractUser.Meta):
+#         pass
 
 
 # 设备列表
@@ -22,39 +31,123 @@ class DeviceList(models.Model):
 
 # 定位信息模型
 class Map(models.Model):
-    n_s = models.IntegerField()
-    w_e = models.IntegerField()
-    time = models.DateTimeField(auto_now=True)
-    device = models.OneToOneField(DeviceList, on_delete=models.CASCADE)
+    latitude = models.CharField(max_length=20)
+    longitude = models.CharField(max_length=20)
+    time = models.TimeField(auto_now=True)
+    device = models.ForeignKey(DeviceList, on_delete=models.CASCADE, related_name='map')
+    timestamp = models.TimeField()
+
+    def __str__(self):
+        return str(self.time)
+
+    class Meta:
+        ordering = ['-id']
+
+
+class MapDetail(models.Model):
+    latitude = models.CharField(max_length=20)
+    longitude = models.CharField(max_length=20)
+    time = models.TimeField(auto_now=True)
+    device = models.OneToOneField(DeviceList, on_delete=models.CASCADE, related_name='map_detail',
+                                  primary_key=True, db_index=True)
+    timestamp = models.TimeField()
 
     def __str__(self):
         return str(self.time)
 
 
 # 体温
-class Tem(models.Model):
-    ta = models.DecimalField(max_digits=4, decimal_places=2)  # 环境温度
-    to = models.DecimalField(max_digits=4, decimal_places=2)  # 目标温度
-    time = models.DateTimeField(auto_now=True)
+class Temp(models.Model):
+    ta = models.CharField(max_length=10)  # 环境温度
+    to = models.CharField(max_length=10)  # 目标温度
+    time = models.TimeField(auto_now=True)
     device = models.ForeignKey(DeviceList, on_delete=models.CASCADE, related_name='temper')
+    timestamp = models.TimeField()
+
+    def __str__(self):
+        return str(self.time)
+
+    class Meta:
+        ordering = ['-id']
+
+
+# 保存最新的体温信息，提高获取速度，以达到app实时的效果
+class TempDetail(models.Model):
+    ta = models.CharField(max_length=10)  # 环境温度
+    to = models.CharField(max_length=10)  # 目标温度
+    time = models.TimeField(auto_now=True)
+    device = models.OneToOneField(DeviceList, on_delete=models.CASCADE, related_name='temper_detail',
+                                  primary_key=True, db_index=True)
+    timestamp = models.TimeField()
 
     def __str__(self):
         return str(self.time)
 
 
 class Gyr(models.Model):  # 陀螺仪数据
-    accx = models.DecimalField(max_digits=6, decimal_places=3)
-    accy = models.DecimalField(max_digits=6, decimal_places=3)
-    accz = models.DecimalField(max_digits=6, decimal_places=3)
-    omegax = models.DecimalField(max_digits=6, decimal_places=3)
-    omegay = models.DecimalField(max_digits=6, decimal_places=3)
-    omegaz = models.DecimalField(max_digits=6, decimal_places=3)
-    anglex = models.DecimalField(max_digits=6, decimal_places=3)
-    angley = models.DecimalField(max_digits=6, decimal_places=3)
-    anglez = models.DecimalField(max_digits=6, decimal_places=3)
+    accx = models.CharField(max_length=25)
+    accy = models.CharField(max_length=25)
+    accz = models.CharField(max_length=25)
+    omegax = models.CharField(max_length=25)
+    omegay = models.CharField(max_length=25)
+    omegaz = models.CharField(max_length=25)
+    anglex = models.CharField(max_length=25)
+    angley = models.CharField(max_length=25)
+    anglez = models.CharField(max_length=25)
     fall = models.BooleanField()
-    device = models.OneToOneField(DeviceList, on_delete=models.CASCADE)
+    device = models.ForeignKey(DeviceList, on_delete=models.CASCADE, related_name='gyr')
+    timestamp = models.TimeField()
+    time = models.TimeField(auto_now=True)
 
     def __str__(self):
         return self.device
+
+    class Meta:
+        ordering = ['-id']
+
+
+class GyrDetail(models.Model):  # 陀螺仪数据
+    accx = models.CharField(max_length=25)
+    accy = models.CharField(max_length=25)
+    accz = models.CharField(max_length=25)
+    omegax = models.CharField(max_length=25)
+    omegay = models.CharField(max_length=25)
+    omegaz = models.CharField(max_length=25)
+    anglex = models.CharField(max_length=25)
+    angley = models.CharField(max_length=25)
+    anglez = models.CharField(max_length=25)
+    fall = models.BooleanField()
+    device = models.OneToOneField(DeviceList, on_delete=models.CASCADE, related_name='gyr_detail',
+                                  primary_key=True, db_index=True)
+    timestamp = models.TimeField()
+    time = models.TimeField(auto_now=True)
+
+    def __str__(self):
+        return self.device
+
+
 # 心电图
+class EcgAndRate(models.Model):
+    ecgdata = models.TextField()
+    rate = models.CharField(max_length=10)
+    device = models.ForeignKey(DeviceList, on_delete=models.CASCADE, related_name='ecg')
+    timestamp = models.TimeField()
+    time = models.TimeField(auto_now=True)
+
+    def __str__(self):
+        return self.device
+
+    class Meta:
+        ordering = ['-id']
+
+
+class EcgAndRateDetail(models.Model):
+    ecgdata = models.TextField()
+    rate = models.CharField(max_length=10)
+    device = models.OneToOneField(DeviceList, on_delete=models.CASCADE, related_name='ecg_detail',
+                                  primary_key=True, db_index=True)
+    timestamp = models.TimeField()
+    time = models.TimeField(auto_now=True)
+
+    def __str__(self):
+        return self.device
